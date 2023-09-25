@@ -245,18 +245,33 @@ header {
 
 .find-partner-img {
     width: 60%;
-    /* debug */
-    background-color: chartreuse;
-    min-height: 300px;
-
 }
 
 .find-partner-paragraph {
     width:40%;
-    /* debug */
-    background-color: darkblue;
-    min-height: 300px;
+  
 
+}
+.find-partner-paragraph p {
+    font-size: var(--font-size);
+    line-height: 1.5rem;
+    padding-left: 20px;
+    
+
+} 
+
+.find-partner-button {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    width: max-content;
+}
+
+
+.img-partner {
+    display: block;
 }
 
 
