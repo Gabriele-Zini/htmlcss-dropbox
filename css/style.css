@@ -15,7 +15,7 @@ img {
 :root {
     --font-size: 1.2rem ;
     --font-size-title:5rem;
-    --font-size-section-title: 1.8rem;
+    --font-size-section-title: 3rem;
 }
 
 
@@ -66,8 +66,16 @@ ul {
 .blue-button {
     display: inline-block;
     background-color: blue;
-    padding:5px;
+    padding:8px;
     color: white !important;
+    text-decoration: none;
+    font-size: var(--font-size);
+}
+
+h4 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -77,6 +85,11 @@ ul {
     display: flex;
 }
 
+.flex-direction-column {
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 20px;
+}
 
 
 /* HEADER */
@@ -105,8 +118,7 @@ header {
 
 .hero {
     background-color: hsl(207.06deg 51.52% 80.59%);
-    padding-top: 50px;
-    /* debug */
+    padding-top: 20px;
 }
 
 
@@ -114,19 +126,34 @@ header {
     justify-content: flex-end;
 }
 
-.hero-img {
-    width: 65%;
-    /* debug */
-    background-color: brown;
-    min-height: 500px;
-}
 
 .hero-paragraph {
     width:35%;
-    /* debug */
-    min-height: 500px;
-    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: var(--font-size);
+    line-height: 1.5rem;
+   
 }
+
+.fa-arrow-down {
+    font-size: 4.5rem;
+    margin-top: 50px;
+}
+
+.hero-img {
+    width: 65%;
+    position: relative;
+  
+}
+
+.jumbo {
+  width: 120%;
+  max-width: none;
+  position: absolute;
+}
+
 
 /* MAIN */
 
@@ -144,14 +171,72 @@ header {
     background-color: yellow;
 }
 
-.contact-office {
-    /* debug */
-    min-height: 150px;
-    background-color: blueviolet;
-    margin: 20px 0;
+.checkbox-container {
+    margin-bottom: 50px;
+}
+
+.checkbox {
+    width: 20px; 
+      height: 20px; 
+      border-radius: 50%; 
+      -webkit-appearance: none; 
+      appearance: none; 
+      border: 2px solid #000; 
+      outline: none; 
+      vertical-align: middle;
+    }
+    
+    label {
+        vertical-align: middle;
+    }
+    
+    .checkbox:checked {
+        border: 5px solid blue;
+    }
+    
+    .user-type {
+        text-align: center;
+        min-height: 50px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .fa-check {
+        color: blue;
+    }
+
+
+    hr {
+        width: 50px;
+        margin: 30px 0;
+    }
+
+
+/* contact-office section */
+
+.contact-office-div {
+    margin-top: 20px;
 }
 
 
+.contact-office {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.team-icon {
+    min-height:50px;
+    justify-content:center;
+    align-items: center;
+}
+
+.custom-solution {
+    padding: 20px;
+    font-size: var(--font-size);
+}
 /* find-partner section */
 
 .find-partner {
@@ -171,7 +256,6 @@ header {
     /* debug */
     background-color: darkblue;
     min-height: 300px;
-
 
 }
 
