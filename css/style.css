@@ -1,0 +1,55 @@
+/* RESET */
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* COMMON */
+
+.container-small {
+    margin: 0 auto;
+    width: 70%;
+
+}
+
+.container-large {
+    margin: 0 auto;
+    width:85%;
+}
+
+/* UTILITY */
+
+.flex-container {
+    display: flex;
+}
+
+
+/* HEADER */
+header {
+    min-height: 100px;
+    /* debug */
+    background-color: green;
+}
+
+/* navbar */
+.navbar {
+    justify-content: space-between;
+    /* debug */
+    min-height: ;
+}
+
+
+
+/* MAIN */
+
+
+
+
+/* FOOTER */
