@@ -200,4 +200,25 @@ header {
     /* debug */
     background-color: yellow;
 }
+
+
+/* free-trial section */
+
+.free-trial {
+    background-color: hsl(207.06deg 51.52% 80.59%);
+}
+
+.free-trial-div {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.free-trial-button {
+    /* debug */
+    background-color: purple;
+    color: white;
+}
+
+
+
 /* FOOTER */
