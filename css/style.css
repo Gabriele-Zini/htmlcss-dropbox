@@ -177,5 +177,27 @@ header {
 
 }
 
+/* team-mebers section */
 
+.square {
+    width: calc(100% / 3);
+    /* debug */
+    min-height: 300px;
+}
+
+.left-square {
+    /* debug */
+    background-color: purple;
+}
+
+
+.right-square {
+    /* debug */
+    background-color: green;
+}
+
+.middle-square {
+    /* debug */
+    background-color: yellow;
+}
 /* FOOTER */
