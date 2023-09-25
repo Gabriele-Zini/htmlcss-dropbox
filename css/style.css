@@ -234,7 +234,6 @@ header {
 }
 
 .custom-solution {
-    padding: 20px;
     font-size: var(--font-size);
 }
 /* find-partner section */
@@ -339,10 +338,15 @@ header {
     padding-top: calc(100% / 2);
 }
 
+.inside-square img {
+    width:100%;
+}
 /* free-trial section */
 
 .free-trial {
     background-color: hsl(207.06deg 51.52% 80.59%);
+    align-items: center;
+    padding: 100px 0;
 }
 
 .free-trial-div {
@@ -350,10 +354,17 @@ header {
     align-items: center;
 }
 
+.free-trial-div h2 {
+    font-size: 2.5rem;
+    width: 60%;
+}
+
 .free-trial-button {
-    /* debug */
-    background-color: purple;
-    color: white;
+    display: inline-block;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
 }
 
 
