@@ -10,18 +10,27 @@ img {
     max-width: 100%;
 }
 
+:root {
+    --font-size: 1.2rem ;
+}
+
 
 /* COMMON */
 
 .container-small {
     margin: 0 auto;
-    width: 70%;
+    width: 60%;
 
 }
 
 .container-large {
     margin: 0 auto;
-    width:85%;
+    width:70%;
+}
+
+.title {
+margin-top: 100px;
+margin-bottom: 100px;
 }
 
 /* UTILITY */
@@ -31,21 +40,63 @@ img {
 }
 
 
+
 /* HEADER */
 header {
-    min-height: 100px;
-    /* debug */
-    background-color: green;
+
 }
 
 /* navbar */
 .navbar {
     justify-content: space-between;
+    align-items: center;
     /* debug */
-    min-height: ;
+    min-height: 100px;
+    /* debug */
+    background-color: green;
+    padding: 0 10px;
+}
+
+.left-nav-div {
+    /* debug */
+    background-color: purple;
+    min-height: 80px;
+    width: 30%;
+}
+
+.right-nav-div {
+    background-color: purple;
+    min-height: 80px;
+    width: 30%;
+
+}
+
+/* hero */
+
+.hero {
+    background-color: hsl(207.06deg 51.52% 80.59%);
+    padding-top: 50px;
+    /* debug */
 }
 
 
+.hero-content {
+    justify-content: flex-end;
+}
+
+.hero-img {
+    width: 65%;
+    /* debug */
+    background-color: brown;
+    min-height: 500px;
+}
+
+.hero-paragraph {
+    width:35%;
+    /* debug */
+    min-height: 500px;
+    background-color: chartreuse;
+}
 
 /* MAIN */
 
