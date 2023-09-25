@@ -284,11 +284,29 @@ header {
 
 .col-action {
     width: calc(( 100% - 40px) / 3);
-    /* debug */
-    min-height: 300px;
-    background-color: red;
+  
 
 }
+.col-action p {
+    line-height: 1.5rem;
+    font-size: var(--font-size);
+}
+
+
+/* client-section*/
+
+.client h2 {
+    font-size: 2.5rem;
+    margin: 100px 0 50px;
+
+}
+
+.client p {
+    font-size: var(--font-size);
+
+}
+
+
 
 /* team-mebers section */
 
