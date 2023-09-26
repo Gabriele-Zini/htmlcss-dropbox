@@ -70,6 +70,7 @@ ul {
     color: white !important;
     text-decoration: none;
     font-size: var(--font-size);
+    text-align: center;
 }
 
 .blue-button:hover {
@@ -104,7 +105,21 @@ h4 {
     font-weight: bold;
 }
 
+.padding-side-20px{
+    padding: 0 20px;
+}
+
+
+.col-60 {
+    width:60%;
+}
+
+.col-35 {
+    width:40%;
+}
+
 /* HEADER */
+
 header {
 
 }
@@ -166,21 +181,28 @@ header {
   position: absolute;
 }
 
-
+.icon-div a {
+    color: #000;
+}
 /* MAIN */
 
 
 /* business-plan section */
+
+.business-plan h2 {
+    margin-top: 100px;
+    font-size: var(--font-size-section-title);
+
+}
+
 .row {
     gap:20px;
     justify-content: center;
 }
 
 .col-plan {
-    /* debug */
-    min-height: 400px;
     width: calc( (100% - 40px ) / 3);
-    background-color: yellow;
+    border: 1px solid hsl(240deg 2.7% 85.49%);
 }
 
 .checkbox-container {
@@ -189,7 +211,7 @@ header {
 }
 
 .checkbox {
-    width: 20px; 
+     width: 20px; 
       height: 20px; 
       border-radius: 50%; 
       -webkit-appearance: none; 
@@ -197,7 +219,10 @@ header {
       border: 2px solid #000; 
       outline: none; 
       vertical-align: middle;
+    }
 
+    .checkbox-container label:first-of-type {
+        margin-right: 40px;
     }
     
     label {
@@ -215,7 +240,12 @@ header {
         min-height: 50px;
         align-items: center;
         justify-content: center;
-        
+        width: 100%;
+        border-bottom: 1px solid hsl(240deg 2.7% 85.49%);
+    }
+
+    .fa-user {
+        margin-right: 5px;
     }
 
     .fa-check {
@@ -226,6 +256,15 @@ header {
     hr {
         width: 50px;
         margin: 30px 0;
+        color: hsl(240deg 2.7% 85.49%);
+    }
+
+    .col-plan ul {
+        margin-bottom: 50px;
+    }
+
+    .col-plan li {
+        margin-top:20px;
     }
 
 
@@ -233,12 +272,13 @@ header {
 
 .contact-office-div {
     margin-top: 20px;
+    border: 1px solid hsl(240deg 2.7% 85.49%);
 }
 
 
 .contact-office {
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px;
 }
 
@@ -246,11 +286,20 @@ header {
     min-height:50px;
     justify-content:center;
     align-items: center;
+    border-bottom: 1px solid hsl(240deg 2.7% 85.49%);
 }
+
 
 .custom-solution {
     font-size: var(--font-size);
+    margin-top: 40px;
 }
+
+.col-35 .blue-button {
+    margin-top: 25px;
+}
+
+
 /* find-partner section */
 
 
@@ -375,7 +424,8 @@ header {
 }
 
 .middle-square p:last-child {
-    margin-top:280px;
+    top:400px;
+
 }
 
 .middle-square h4 {
@@ -414,7 +464,7 @@ color:hsl(0, 11%, 75%);
     align-items: center;
     width: calc(100% / 2);
     position: relative;
-   padding: calc(100% / 4);
+    padding: calc(100% / 4);
 }
 
 .inside-square img {
