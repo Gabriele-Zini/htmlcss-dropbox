@@ -96,6 +96,14 @@ h4 {
 }
 
 
+.mb-50px {
+    margin-bottom: 50px;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
 /* HEADER */
 header {
 
@@ -231,7 +239,6 @@ header {
 .contact-office {
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
     margin-bottom: 20px;
 }
 
@@ -254,9 +261,12 @@ header {
 
 .find-partner-paragraph {
     width:40%;
-  
-
 }
+
+.find-partner-paragraph h4 {
+    margin-left: 20px;
+}
+
 .find-partner-paragraph p {
     font-size: var(--font-size);
     line-height: 1.5rem;
@@ -272,6 +282,7 @@ header {
     border: 2px solid black;
     padding: 10px;
     width: max-content;
+    margin-left:20px;
 }
 
 
@@ -281,6 +292,11 @@ header {
 
 
 /* dropbox actions section */
+
+.actions h2 {
+    font-size: 2.5rem;
+   
+}
 
 .row-actions {
     flex-wrap: wrap;
@@ -472,6 +488,15 @@ color:hsl(0, 11%, 75%);
 /* faq section */
 
 .question {
+    border-bottom: .8px solid black;
+}
+
+.first-question {
+    border-top: .8px solid black;
+    margin-top: 50px;
+}
+
+.question {
     justify-content: space-between;
     padding: 50px 0;
 }
@@ -492,6 +517,7 @@ color:hsl(0, 11%, 75%);
 
 .fa-angle-down {
     transition: all .8s;
+    margin-right: 40px;
 }
 
 .question:hover {
