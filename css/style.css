@@ -244,7 +244,7 @@ header {
         border-bottom: 1px solid hsl(240deg 2.7% 85.49%);
     }
 
-    .fa-user {
+    .fa-user, .fa-people-group, .fa-building {
         margin-right: 5px;
     }
 
@@ -424,7 +424,7 @@ header {
 }
 
 .middle-square p:last-child {
-    top:400px;
+    margin-top:350px;
 
 }
 
@@ -449,6 +449,7 @@ color:hsl(0, 11%, 75%);
 .fa-registered {
     position: absolute;
     font-size: 1rem;
+    top: 20px;
 }
 
 .middle-square span {
@@ -477,6 +478,9 @@ color:hsl(0, 11%, 75%);
 
 .left-square div:nth-of-type(1) {
     background-color: hsl(112.5deg 38.89% 71.76%);
+    border: 15px solid hsl(111.43deg 38.89% 85.88%);
+    padding: calc((100% - 60px) / 4);
+
    
 }
 .left-square div:nth-of-type(2) {
