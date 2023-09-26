@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     /* debug */
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 img {
@@ -246,9 +246,7 @@ header {
 }
 /* find-partner section */
 
-.find-partner {
 
-}
 
 .find-partner-img {
     width: 60%;
@@ -320,35 +318,130 @@ header {
 .square {
     width: calc(100% / 3);
     /* debug */
-    /* padding-top: calc(100% / 3); */
+   /* padding: calc(100% / 3); */
 }
+
 
 .left-square {
     /* debug */
-    background-color: purple;
     flex-wrap: wrap;
 }
 
 
 .right-square {
     /* debug */
-    background-color: green;
     flex-wrap: wrap;
 }
 
 .middle-square {
+    overflow-y: auto;
     /* debug */
-    background-color: yellow;
+    position: relative;
+    background-color: hsl(0deg 0% 96.08%);
 }
 
+
+.middle-square h4 {
+    font-size: 2.5rem;
+    
+}
+
+.middle-square p:nth-of-type(2) {
+    margin-bottom: 40px 0;
+    top: 200px;
+}
+
+.middle-square p {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 100px;
+}
+
+.middle-square p:last-child {
+    margin-top:280px;
+}
+
+.middle-square h4 {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    font-size: var(--font-size-title);
+
+}
+
+
+.middle-square hr {
+position: absolute;
+left: 30px;
+right: 30px;
+width:30%;
+top: 140px;
+color:hsl(0, 11%, 75%);
+}
+
+.fa-registered {
+    position: absolute;
+    font-size: 1rem;
+}
+
+.middle-square span {
+    font-weight: bold;
+    
+}
+
+
+
+
 .inside-square {
+    justify-content: center;
+    align-items: center;
     width: calc(100% / 2);
-    padding-top: calc(100% / 2);
+    position: relative;
+   padding: calc(100% / 4);
 }
 
 .inside-square img {
-    width:100%;
+    position: absolute;
+    padding:30px;
+    margin: auto;
+    color: white;
 }
+
+
+.left-square div:nth-of-type(1) {
+    background-color: hsl(112.5deg 38.89% 71.76%);
+   
+}
+.left-square div:nth-of-type(2) {
+    background-color: hsl(197.18deg 100% 40.39%);
+}
+.left-square div:nth-of-type(3) {
+    background-color: hsl(336.4deg 84.76% 20.59%);
+}
+.left-square div:nth-of-type(4) {
+    background-color: hsl(0deg 100% 55.49%);
+}
+
+
+
+.right-square div:nth-of-type(1) {
+    background-color: hsl(351.27deg 100% 41.76%)
+   
+}
+.right-square div:nth-of-type(2) {
+    background-color: hsl(207.06deg 51.52% 80.59%);
+   
+}
+.right-square div:nth-of-type(3) {
+    background-color: hsl(228.1deg 81.69% 27.84% );
+   
+}
+.right-square div:nth-of-type(4) {
+    background-color: hsl(48.7deg 100% 59.41%)
+   
+}
+
 /* free-trial section */
 
 .free-trial {
