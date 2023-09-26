@@ -158,7 +158,7 @@ header {
     width:35%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     font-size: var(--font-size);
     line-height: 1.5rem;
    
