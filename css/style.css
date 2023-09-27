@@ -423,7 +423,7 @@ ul {
     overflow-y: auto;
     background-color: hsl(0deg 0% 96.08%);
     height: calc(100vw / 3);
-    padding: 0 2rem 2rem ;
+    padding: 3.5rem ;
 }
 
 
@@ -449,19 +449,19 @@ ul {
 
 .middle-square h4 {
     font-size: var(--font-size-title);
-
 }
 
 
 .middle-square hr {
 color:hsl(0, 11%, 75%);
+width:25%;
 }
 
 .fa-registered {
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: relative;
-    bottom:2rem;
-    right:1rem;
+    bottom:2.8rem;
+    right:1.5rem;
    
 }
 
