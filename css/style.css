@@ -14,8 +14,8 @@ img {
 
 :root {
     --font-size: 1.6rem ;
-    --font-size-title:4rem;
-    --font-size-section-title: 3.2rem;
+    --font-size-title:5rem;
+    --font-size-section-title: 3.6rem;
 }
 
 
@@ -32,13 +32,13 @@ body {
 
 .container-small {
     margin: 0 auto;
-    width: 70%;
+    width: 65%;
 
 }
 
 .container-large {
     margin: 0 auto;
-    width:80%;
+    width:75%;
 }
 
 
@@ -66,7 +66,7 @@ ul {
 .ul-nav {
     height: 100px;
     align-items: center;
-    gap: 1.5rem;
+    gap: 3rem;
 }
 
 .blue-button {
@@ -83,11 +83,6 @@ ul {
     background-color: rgb(11, 11, 156);
 }
 
-h4 {
-    font-size: 1.5rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
 
 /* UTILITY */
@@ -112,24 +107,11 @@ h4 {
 }
 
 .padding-side-20px{
-    padding: 0 20px;
-}
-
-
-.col-60 {
-    width:60%;
-}
-
-.col-35 {
-    width:40%;
+    padding: 20px 20px;
 }
 
 /* HEADER */
 
-header {
-   
-
-}
 
 /* navbar */
 .navbar {
@@ -138,8 +120,6 @@ header {
     padding: 0 20px;
     min-height: 100px;
     font-size: var(--font-size);
-    
-   
 }
 
 
@@ -183,7 +163,7 @@ header {
 }
 
 .jumbo {
-  width: 120%;
+  width: 100%;
   max-width: none;
 }
 
@@ -198,7 +178,7 @@ header {
 /* business-plan section */
 
 .business-plan h2 {
-    margin-top: 100px;
+    margin-top: 60px;
     font-size: var(--font-size-section-title);
 
 }
@@ -211,6 +191,12 @@ header {
 .col-plan {
     width: calc( (100% - 40px ) / 3);
     border: 1px solid hsl(240deg 2.7% 85.49%);
+    font-size: var(--font-size);
+    padding: 0 2rem;
+}
+
+.col-plan h4 {
+    font-size: 2rem;
 }
 
 .checkbox-container {
@@ -230,11 +216,13 @@ header {
     }
 
     .checkbox-container label:first-of-type {
-        margin-right: 40px;
+        margin-right: 4rem;
     }
     
     label {
         vertical-align: middle;
+        font-size: var(--font-size);
+        margin-left: 1rem;
     }
 
     
@@ -250,6 +238,7 @@ header {
         justify-content: center;
         width: 100%;
         border-bottom: 1px solid hsl(240deg 2.7% 85.49%);
+        font-size: var(--font-size);
     }
 
     .fa-user, .fa-people-group, .fa-building {
@@ -281,14 +270,19 @@ header {
 .contact-office-div {
     margin-top: 20px;
     border: 1px solid hsl(240deg 2.7% 85.49%);
+    font-size: var(--font-size);
 }
 
 
 .contact-office {
     margin-bottom: 20px;
     justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
+}
+
+
+.contact-office h4 {
+    font-size: 3rem;
 }
 
 .team-icon {
@@ -304,9 +298,14 @@ header {
     margin-top: 40px;
 }
 
-.col-35 .blue-button {
-    margin-top: 25px;
+
+.col-40 {
+    width:40%;
+    align-self: flex-start;
+    justify-content: flex-end;
+
 }
+
 
 
 /* find-partner section */
@@ -418,6 +417,11 @@ header {
     white-space: nowrap;
 }
 
+.middle-square p {
+    font-size: var(--font-size);
+
+}
+
 .middle-square p:nth-of-type(2) {
     margin-bottom: 40px 0;
 }
@@ -425,8 +429,7 @@ header {
 
 
 .middle-square p:last-child {
-    margin-top: 2rem;
-
+    margin-top: 4rem;
 }
 
 .middle-square h4 {
@@ -532,6 +535,10 @@ color:hsl(0, 11%, 75%);
 
 /* faq section */
 
+.question-section h2 {
+    font-size: 2.5rem;
+}
+
 .question {
     border-bottom: .8px solid black;
 }
@@ -549,7 +556,6 @@ color:hsl(0, 11%, 75%);
 .frequent-question {
     font-size: var(--font-size);
     font-weight: bold;
-
 }
 
 
@@ -563,6 +569,7 @@ color:hsl(0, 11%, 75%);
 .fa-angle-down {
     transition: all .8s;
     font-size: var(--font-size);
+    margin-right: 50px;
 
 }
 
@@ -571,7 +578,7 @@ color:hsl(0, 11%, 75%);
     flex-wrap: wrap;
     
 }
-.question:hover i {
+.question:hover .fa-angle-down {
    transform: rotate(180deg);
 }
 
@@ -581,8 +588,8 @@ color:hsl(0, 11%, 75%);
     
 }
 
-.question:hover .frequent-question {
-}
+
+
 
 /* FOOTER */
 
