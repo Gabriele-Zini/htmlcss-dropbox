@@ -44,9 +44,10 @@ body {
 
 
 .title {
-padding-top: 5rem;
-padding-bottom: 50px;
-font-size: var(--font-size-title);
+    margin-top: 100px;
+    padding-top: 5rem;
+    padding-bottom: 50px;
+    font-size: var(--font-size-title);
 }
 
 
@@ -124,10 +125,20 @@ ul {
     filter:brightness(2)
 }
 
+.position-fixed {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    width: 100%;
+}
+
 /* HEADER */
 
 
 /* navbar */
+
+
 .navbar {
     justify-content: space-between;
     align-items: center;
