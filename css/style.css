@@ -531,11 +531,11 @@ color:hsl(0, 11%, 75%);
 
 .free-trial-div {
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .free-trial-div h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     width: 60%;
 }
 
@@ -543,8 +543,9 @@ color:hsl(0, 11%, 75%);
     display: inline-block;
     background-color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 1rem;
     color: black;
+    font-size: var(--font-size);
 }
 
 
