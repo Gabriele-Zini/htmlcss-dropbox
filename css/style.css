@@ -4,8 +4,6 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    /* debug */
-    /* border: 2px solid black; */
 }
 
 img {
@@ -85,6 +83,13 @@ ul {
 
 .white-button:hover {
     background-color: lightgray;
+}
+
+.col-40 {
+    width:40%;
+    align-self: flex-start;
+    justify-content: flex-end;
+
 }
 
 
@@ -306,12 +311,6 @@ ul {
 }
 
 
-.col-40 {
-    width:40%;
-    align-self: flex-start;
-    justify-content: flex-end;
-
-}
 
 
 
@@ -401,12 +400,10 @@ ul {
 
 
 
-/* team-mebers section */
+/* team-members section */
 
 .square {
     width: calc(100% / 3);
-    /* debug */
-   /* padding: calc(100% / 3); */
 }
 
 
@@ -462,7 +459,6 @@ width:25%;
     position: relative;
     bottom:2.8rem;
     right:1.5rem;
-   
 }
 
 .middle-square span {
@@ -577,9 +573,13 @@ width:25%;
 
 .answer {
     line-height: 3rem;
-    display: none;
     margin-top: 3rem;
     font-size: var(--font-size);
+    opacity: 0; /* avevo messo display:"none", ma non potevo fare transizioni (anche se scorreva meglio) */
+    position:absolute;
+    transition: all .8s ease-in;
+    
+    
 }
 
 .fa-angle-down {
@@ -600,8 +600,8 @@ width:25%;
 
 
 .question:hover .answer {
-    display: block;
-    
+    position: static;
+    opacity: 1;
 }
 
 
@@ -623,8 +623,7 @@ footer {
 
 .footer-col {
   width:calc((100% - 60px) / 5) ;
-  /* debug */
-  min-height: 300px;
+
 }
 
 .footer-bottom {
