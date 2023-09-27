@@ -406,6 +406,7 @@ header {
 .middle-square {
     overflow-y: auto;
     background-color: hsl(0deg 0% 96.08%);
+    height: calc(100vw / 3);
     
 }
 
